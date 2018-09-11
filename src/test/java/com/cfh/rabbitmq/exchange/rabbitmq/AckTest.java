@@ -1,26 +1,26 @@
 package com.cfh.rabbitmq.exchange.rabbitmq;
 
-import com.cfh.rabbitmq.pojo.User;
-import com.cfh.rabbitmq.rabbit.object.ObjectSender;
+import com.cfh.rabbitmq.ack.AckSender;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+/**
+ * @Author: cfh
+ * @Date: 2018/9/11 19:10
+ * @Description:
+ */
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class ObjectTest {
+public class AckTest {
 
-	@Autowired
-	private ObjectSender sender;
+    @Autowired
+    AckSender ackSender;
 
-	@Test
-	public void sendOject() throws Exception {
-		User user=new User();
-		user.setName("neo");
-		user.setPass("123456");
-		sender.send(user);
-	}
-
+    @Test
+    public void test(){
+        ackSender.send();
+    }
 }

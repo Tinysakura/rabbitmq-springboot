@@ -1,6 +1,6 @@
 package com.cfh.rabbitmq.rabbit.object;
 
-import com.cfh.rabbitmq.model.User;
+import com.cfh.rabbitmq.pojo.User;
 import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;

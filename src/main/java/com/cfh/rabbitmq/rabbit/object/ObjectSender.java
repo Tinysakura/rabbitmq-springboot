@@ -1,6 +1,6 @@
 package com.cfh.rabbitmq.rabbit.object;
 
-import com.cfh.rabbitmq.model.User;
+import com.cfh.rabbitmq.pojo.User;
 import org.springframework.amqp.core.AmqpTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

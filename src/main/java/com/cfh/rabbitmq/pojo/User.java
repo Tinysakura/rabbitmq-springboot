@@ -1,4 +1,4 @@
-package com.cfh.rabbitmq.model;
+package com.cfh.rabbitmq.pojo;
 
 import java.io.Serializable;
 
